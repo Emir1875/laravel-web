@@ -58,8 +58,25 @@
             <div class="col-lg-4 col-md-6 mb-4">
                 <div class="card h-100 shadow-sm">
                     <div class="card-body">
-                        <h5 class="card-title">Desain Modern</h5>
-                        <p class="card-text">Dibangun dengan Bootstrap 5 untuk memastikan tampilan yang bersih dan responsif di semua perangkat.</p>
+                        <h5 class="card-title">Halaman Respon</h5>
+
+                        <form action="{{ route('question.store') }}" method="POST">
+                            @csrf
+
+                            <div class="mb-3">
+                                <label for="nama" class="form-label">Nama</label>
+                                <input type="text" class="form-control" name="nama" required>
+                            </div>
+                        <div class="mb-3">
+                            <label for="email" class="form-label">Email</label>
+                            <input type="text" class="form-control" name="email" required>
+                        </div>
+                        <div class="mb-3">
+                            <label for="Respon" class="form-label">Respon</label>
+                            <textarea class="form-control" rows="4" name="respon"></textarea>
+                        </div>
+                            <button type="submit" class="btn btn-primary">Kirim Respon</button>
+                        </form>
                     </div>
                 </div>
             </div>
@@ -85,8 +102,8 @@
                             <label for="pertanyaan" class="form-label">Pertanyaan</label>
                             <textarea class="form-control" rows="4" name="pertanyaan"></textarea>
                         </div>
-                        <button type="submit" class="btn btn-primary">Kirim Pertanyaan</button>
-                    </form>
+                            <button type="submit" class="btn btn-primary">Kirim Pertanyaan</button>
+                        </form>
                     </div>
                 </div>
             </div>
