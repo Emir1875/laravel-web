@@ -1,0 +1,38 @@
+.col-lg-4.col-md-6.mb-4 {
+    padding: 10px;
+}
+
+.card.h-100 {
+    border-radius: 12px;
+    background-color: #ffffff;
+    transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+}
+
+.card.h-100:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.15) !important;
+}
+
+.card-body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+}
+
+.card-body img {
+    max-width: 80%;
+    max-height: 100px;
+    height: auto;
+    display: block;
+    margin: 0 auto;
+}
+
+@font-face {
+    font-family: 'MyCustomFont';
+    src: url('assets/fonts/MyCustomFont.ttf'));
+}
+
+.font-custom{
+    font-family: 'MyCustomFont';
+}

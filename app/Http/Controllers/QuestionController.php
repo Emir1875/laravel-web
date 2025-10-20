@@ -42,7 +42,13 @@ class QuestionController extends Controller
             'email.required' => 'Email tidak valid',
         ]);
 
-        return view('home-question-respon', $data);
+        //return view('home-question-respon', $data);
+
+        //return redirect()->route('home');
+        //return redirect()->back();
+        //return redirect()->away('https://www.youtube.com/watch?v=adSrlrsBaCQ&pp=ygUUNSBtaW51dGVzIGNyYWZ0IG1lbWU%3D');
+        return redirect()->route('home')->with('info', 'Pertanyaan berhasil dikirim');
+
     }
 
     /**
